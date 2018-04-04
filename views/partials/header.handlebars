@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid" id="nytHeader">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/saved" style="color:white">Saved Articles</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/" style="color:white">Home</a></li>
+      <li class="active"><a href="/saved" style="background-color: #333; color:white">Saved Articles</a></li>
+      <li><a class="btn btn-danger scrape-new">SCRAPE ARTICLES</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron text-center">
+  <div class="overlay">
+  </div>
+  <div class="background-image">
+  </div>
+  <div class="caption">
+    <h1>{{this.header}}</h1>
+    <p>{{this.text}}</p>
+  </div>
+</div>
+<div class="container-fluid article-container" id="savedArticles">
+</div>

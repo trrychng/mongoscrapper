@@ -1,0 +1,26 @@
+
+
+  {{#each Articles}}
+<div class='panel panel-default'>
+  <div class='panel-heading'><a target='_blank' class='article-link' href={{this.link}}><h3>{{this.title}}</h3></a>
+  <a class='btn btn-primary save' data-id={{this._id}}>Save Article</a></div><div class='panel-body'><p>{{this.summary}}</p>
+  </div></div>
+  {{/each}}
+
+
+<div class="bootbox modal fade bootbox-alert in" tabindex="-1" role="dialog" id="scrapeModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="bootbox-close-button close" data-dismiss="modal" aria-hidden="true" style="margin-top: -10px;">×</button>
+        <div class="bootbox-body">
+          <h3 class="text-center m-top-80" id="scrapeResult"></h3>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button data-bb-handler="ok" type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/index.js"></script>
